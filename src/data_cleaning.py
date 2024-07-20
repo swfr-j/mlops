@@ -21,12 +21,12 @@ class DataPreProcessStrategy(DataStrategy):
     Strategy to preprocess data
     """
 
-    def handle_data(self, df: pd.DataFrame) -> Union[pd.DataFrame, pd.Series]:
+    def handle_data(self, data: pd.DataFrame) -> Union[pd.DataFrame, pd.Series]:
         """
         Preprocess the data
 
         Args:
-            df: pd.DataFrame: the data to preprocess
+            data: pd.DataFrame: the data to preprocess
 
         Returns:
             pd.DataFrame: the preprocessed data
