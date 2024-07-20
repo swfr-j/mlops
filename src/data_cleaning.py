@@ -54,7 +54,7 @@ class DataPreProcessStrategy(DataStrategy):
             data["product_width_cm"].fillna(
                 data["product_width_cm"].median(), inplace=True
             )
-            data["review_comment_title"].fillna("No Title", inplace=True)
+            data["review_comment_message"].fillna("No Title", inplace=True)
 
             data = data.select_dtypes(include=[np.number])
             cols_to_drop = ["customer_zip_code_prefix", "order_item_id"]

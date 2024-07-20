@@ -9,9 +9,7 @@ from .config import ModelNameConfig
 @step
 def train_model(
     X_train: pd.DataFrame,
-    X_test: pd.DataFrame,
     y_train: pd.Series,
-    y_test: pd.Series,
     config: ModelNameConfig,
 ) -> RegressorMixin:
     """
@@ -19,9 +17,7 @@ def train_model(
 
     Args:
         X_train: pd.DataFrame: the training data
-        X_test: pd.DataFrame: the testing data
         y_train: pd.Series: the training labels
-        y_test: pd.Series: the testing labels
 
     Returns:
         RegressorMixin: the trained model
